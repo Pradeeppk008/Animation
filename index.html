@@ -90,18 +90,18 @@
         }
         @keyframes move1{
             from{
-                transform: translateX(0);
+                transform: translateX(-100px);
             }
             to{
-                transform: translateX(1400px);
+                transform: translateX(1500px);
             }
         }
         @keyframes move2{
             from{
-                transform: translateX(0);
+                transform: translateX(-100px);
             }
             to{
-                transform: translateX(1400px);
+                transform: translateX(1500px);
             }
         }
         @keyframes move3{
@@ -124,13 +124,14 @@
 
 
 
-        @media (max-width:500px){
+        @media (max-width:500px) and(orientation:landscape){
             body,html{
                
-           width: 1000px;
+           min-width: 1000px;
             margin: 0;
             background-size:cover;
-          
+          overflow-x: hidden;
+          overflow-y: hidden;
         }
         .box1 {
            
@@ -144,7 +145,7 @@
            
            background-color: grey;
            height: 400px;
-        
+           width: 1000px;
           
            border-top: 12px solid darkgray;
            border-bottom: 12px solid darkgray;
@@ -152,7 +153,7 @@
        }
             .bike2{
                 position:relative;
-                top: 45%;
+                top: 40%;
                 width: 50px;
                 height: 50px;
             }
